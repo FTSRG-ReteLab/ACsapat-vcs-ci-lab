@@ -59,5 +59,12 @@ public class TrainSystemTest {
 		Assert.assertEquals(5, controller.getReferenceSpeed());
 	}
 
+	@Test
+	public void test4() {
+		user.overrideJoystickPosition(5);
+		Table table=controller.tachograph();
+		Assert.assertNotNull();
+		
+	}
 	
 }
